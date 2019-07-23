@@ -151,7 +151,7 @@
 								crop_width: 500,
 								crop_height: 500,
 								image_format : 'jpeg',
-								jpeg_quality : 90
+								//jpeg_quality : 90
 							});
 							Webcam.attach('#my_camera');
 						}
@@ -165,7 +165,7 @@
 								crop_width: 500,
 								crop_height: 500,
 								image_format : 'jpeg',
-								jpeg_quality : 90
+								//jpeg_quality : 90
 							});
 							Webcam.attach('#my_camera');
 						}
