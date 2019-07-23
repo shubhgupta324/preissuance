@@ -92,7 +92,7 @@
 	}
 	
 }
-
+/* 
 @media ( max-width : 344px) {
 	#my_camera {
 	width: 250px !important;
@@ -107,7 +107,7 @@
 	height: 188px !important;
 	
 }
-}
+} */
 /*@media only screen and (min-width : 360px) and (min-height: 680px) and (max-width : 500px) {
 	#my_camera {
 		width: 90% !important;
