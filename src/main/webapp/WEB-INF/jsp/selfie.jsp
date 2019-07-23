@@ -182,9 +182,11 @@
 				</div>
 
 				<input type="hidden" name="txnId" value="${TxnId}"> <input
-					type=hidden id="selfiImage" name="selfiImage" value=""> <input
+					type="hidden" id="selfiImage" name="selfiImage" value=""> <input
 					type="hidden" id="isSelfieCaptured" name="isSelfieCaptured"
 					value="true">
+					<img id="myImage" style="display:none"   src=""  />
+					<!--<canvas id="myCanvas" style="display:none" width="200" height="100" style="border:1px solid #000000;"></canvas>  --> 
 			</form>
 				<input type="hidden"  id="image_fixed" value="false">	
 					<!--<input type=button
@@ -194,7 +196,7 @@
 				<!-- Configure a few settings and attach camera  -->
 					function configure() {
 						Webcam.set({
-							width : 320,
+							//width : 320,
 							height : 240,
 							image_format : 'jpeg',
 							jpeg_quality : 90
@@ -236,12 +238,26 @@
 
 					var image_fixed=$('#image_fixed').val();
                        			if(image_fixed=='false'){
-						Webcam
-								.snap(function(data_uri) {
-									document.getElementById("selfiImage").value = data_uri;
-						var selfie_image = '<img  style="padding:6px 12px 6px;"  src="'+data_uri+'" width="'+width+'" height="'+height+'" >';
-									$('#my_camera').html(selfie_image);
-									$('#submitbutton').removeAttr("disabled");
+								Webcam
+								.snap(function(data_uri, event) {
+									console.log("Start");
+									console.log(event);
+									console.log("End");
+									document.getElementById("selfiImage").src = data_uri;
+						         
+								var selfie_image = '<img  style="padding:6px 12px 6px;"  src="'+data_uri+'" width="'+width+'" height="'+height+'" >';
+								$('#my_camera').html(selfie_image);
+								
+								/*
+								var image =document.getElementById("myImage");
+								image.src=data_uri;
+								var canvas=document.getElementById("myCanvas");
+								canvas.width=canvas.height *(canvas.clientWidth / canvas.clientHeight);
+								var context =canvas.getContext("2d");
+								context.drawImage(image,0,0,400,300);
+								*/
+								
+								$('#submitbutton').removeAttr("disabled");
 									$('#image_fixed').val("true");
                                     $('#save_image').val("Open Camera");
 									//Take Selfie , Open Camera   save_image
