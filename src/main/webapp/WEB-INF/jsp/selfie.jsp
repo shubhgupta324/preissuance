@@ -79,7 +79,11 @@
 	margin-bottom: 5px;
 	width: auto;	
 }
+
 */
+.otp-content .btn-primary{
+	width:110px;
+}
 #my_camera-ios_div{
 	width: 100% !important;
 	display: block !important;
