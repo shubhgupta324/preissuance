@@ -235,7 +235,7 @@
 						Webcam
 								.snap(function(data_uri) {
 									document.getElementById("selfiImage").value = data_uri;
-						var selfie_image = '<img src="'+data_uri+'" width="'+width+'" height="'+height+'" >';
+						var selfie_image = '<img  style="padding:6px 12px 6px;"  src="'+data_uri+'" width="'+width+'" height="'+height+'" >';
 									$('#my_camera').html(selfie_image);
 									$('#submitbutton').removeAttr("disabled");
 									$('#image_fixed').val("true");
