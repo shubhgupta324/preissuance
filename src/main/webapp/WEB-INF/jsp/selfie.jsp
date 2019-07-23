@@ -139,18 +139,18 @@
 		<div class="otp-content">
 			<div class="top-content">
 
-				<div id="my_camera">
+				<div id="my_camera" style="width:300px;height:300px">
 
 					<script type="text/javascript">
 						function webCamLoad() {
 							Webcam.set({
-								width: 888,
-								height: 500,
-								dest_width: 888,
-								dest_height: 500,
-								crop_width: 500,
-								crop_height: 500,
-								image_format : 'jpeg',
+								//width: 888,
+								//height: 500,
+								//dest_width: 888,
+								//dest_height: 500,
+								//crop_width: 500,
+								//crop_height: 500,
+								//image_format : 'jpeg',
 								//jpeg_quality : 90
 							});
 							Webcam.attach('#my_camera');
@@ -158,13 +158,13 @@
 						function webCamLoadDesk() {
 							Webcam.set({
 
-								width: 888,
-								height: 500,
-								dest_width: 888,
-								dest_height: 500,
-								crop_width: 500,
-								crop_height: 500,
-								image_format : 'jpeg',
+								//width: 888,
+								//height: 500,
+								//dest_width: 888,
+								//dest_height: 500,
+								//crop_width: 500,
+								//crop_height: 500,
+								//image_format : 'jpeg',
 								//jpeg_quality : 90
 							});
 							Webcam.attach('#my_camera');
@@ -205,16 +205,14 @@
 				<!-- Configure a few settings and attach camera  -->
 					function configure() {
 						Webcam.set({
-							//width : 320,
-							//height : 240,
-							width: 888,
-							height: 500,
-							dest_width: 888,
-							dest_height: 500,
-							crop_width: 500,
-							crop_height: 500,
-							image_format : 'jpeg',
-							jpeg_quality : 90
+							//width: 888,
+							//height: 500,
+							//dest_width: 888,
+							//dest_height: 500,
+							//crop_width: 500,
+							//crop_height: 500,
+							//image_format : 'jpeg',
+							//jpeg_quality : 90
 						});
 						Webcam.attach('#my_camera');
 					}
@@ -222,15 +220,14 @@
 					function configureDesk() {
 						Webcam.set({
 
-							//height : 240,
-							width: 888,
-							height: 500,
-							dest_width: 888,
-							dest_height: 500,
-							crop_width: 500,
-							crop_height: 500,
-							image_format : 'jpeg',
-							jpeg_quality : 90
+							//width: 888,
+							//height: 500,
+							//dest_width: 888,
+							//dest_height: 500,
+							//crop_width: 500,
+							//crop_height: 500,
+							//image_format : 'jpeg',
+							//jpeg_quality : 90
 						});
 						Webcam.attach('#my_camera');
 					}
