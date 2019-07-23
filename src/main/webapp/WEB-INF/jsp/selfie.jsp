@@ -139,12 +139,12 @@
 		<div class="otp-content" style="width:240px">
 			<div class="top-content"  style="width:240px">
 
-				<div id="my_camera" style="height:240px">
+				<div id="my_camera" style="width:240px;height:240px">
 
 					<script type="text/javascript">
 						function webCamLoad() {
 							Webcam.set({
-								//width: 888,
+								width: 240,
 								//height: 500,
 								//dest_width: 888,
 								//dest_height: 500,
@@ -158,7 +158,7 @@
 						function webCamLoadDesk() {
 							Webcam.set({
 
-								//width: 888,
+								width: 240,
 								//height: 500,
 								//dest_width: 888,
 								//dest_height: 500,
@@ -205,7 +205,7 @@
 				<!-- Configure a few settings and attach camera  -->
 					function configure() {
 						Webcam.set({
-							//width: 888,
+							 width: 240,
 							//height: 500,
 							//dest_width: 888,
 							//dest_height: 500,
@@ -220,7 +220,7 @@
 					function configureDesk() {
 						Webcam.set({
 
-							//width: 888,
+							 width: 240,
 							//height: 500,
 							//dest_width: 888,
 							//dest_height: 500,
