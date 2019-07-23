@@ -135,11 +135,11 @@
 		var count = 0;
 	</script>
 
-	<section class="main-content">
-		<div class="otp-content">
-			<div class="top-content">
+	<section class="main-content" >
+		<div class="otp-content" style="width:240px">
+			<div class="top-content"  style="width:240px">
 
-				<div id="my_camera" style="width:300px;height:300px">
+				<div id="my_camera" style="height:240px">
 
 					<script type="text/javascript">
 						function webCamLoad() {
