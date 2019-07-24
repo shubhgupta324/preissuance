@@ -268,10 +268,12 @@
 									var selfie_image;   
 								if (isMobileDevice == 'true') 
 						           {
+									alert("iphone is working");
 									selfie_image  = '<img   src="'+data_uri+'"  width="100%" height="100%" >';   
 						           }
 						           else
 						           {
+						        	   alert("normal phone");
 						        	 selfie_image = '<img   src="'+data_uri+'"  width="75%" height="100%" >';
 						           }
 								
