@@ -263,7 +263,8 @@
 									console.log("End");
 									document.getElementById("selfiImage").src = data_uri;
 						         
-								var selfie_image = '<img   src="'+data_uri+'" width="'+width+'" height="'+height+'" >';
+								//var selfie_image = '<img   src="'+data_uri+'" width="'+width+'" height="'+height+'" >';
+								var selfie_image = '<img   src="'+data_uri+'" width="100%" height="100%" >';
 								$('#my_camera').html(selfie_image);
 								
 								/*
