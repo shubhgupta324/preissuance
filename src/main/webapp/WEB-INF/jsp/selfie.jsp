@@ -264,7 +264,17 @@
 									document.getElementById("selfiImage").src = data_uri;
 						         
 								//var selfie_image = '<img   src="'+data_uri+'" width="'+width+'" height="'+height+'" >';
-								var selfie_image = '<img   src="'+data_uri+'"  width="75%" height="100%" >';
+								var isMobile = /iPhone
+								.test(navigator.userAgent);
+						           if (isMobile == 'true') {
+						           {
+						        	   var selfie_image = '<img   src="'+data_uri+'"  width="100%" height="100%" >';   
+						           }
+						           else
+						           {
+						        	   var selfie_image = '<img   src="'+data_uri+'"  width="75%" height="100%" >';
+						           }
+								
 								$('#my_camera').html(selfie_image);
 								
 								/*
