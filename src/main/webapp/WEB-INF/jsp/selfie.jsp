@@ -266,7 +266,7 @@
 								//var selfie_image = '<img   src="'+data_uri+'" width="'+width+'" height="'+height+'" >';
 								var isMobile = /iPhone
 								.test(navigator.userAgent);
-						           if (isMobile == 'true') {
+						           if (isMobile == 'true') 
 						           {
 						        	   var selfie_image = '<img   src="'+data_uri+'"  width="100%" height="100%" >';   
 						           }
