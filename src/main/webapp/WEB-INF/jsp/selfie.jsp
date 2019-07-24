@@ -264,7 +264,7 @@
 									document.getElementById("selfiImage").src = data_uri;
 						         
 								//var selfie_image = '<img   src="'+data_uri+'" width="'+width+'" height="'+height+'" >';
-								var selfie_image = '<img   src="'+data_uri+'"  width="80%" height="80%" >';
+								var selfie_image = '<img   src="'+data_uri+'"  width="80%" height="100%" >';
 								$('#my_camera').html(selfie_image);
 								
 								/*
@@ -278,7 +278,7 @@
 								
 								$('#submitbutton').removeAttr("disabled");
 									$('#image_fixed').val("true");
-                                    $('#save_image').val("Open Camera");
+                                   $('#save_image').val("Open Camera");
 									//Take Selfie , Open Camera   save_image
 								});
 						}
