@@ -144,7 +144,7 @@
 					<script type="text/javascript">
 						function webCamLoad() {
 							Webcam.set({
-								width: 240,
+								//width: 240,
 								//height: 500,
 								//dest_width: 888,
 								//dest_height: 500,
@@ -158,7 +158,7 @@
 						function webCamLoadDesk() {
 							Webcam.set({
 
-								width: 240,
+								//width: 240,
 								//height: 500,
 								//dest_width: 888,
 								//dest_height: 500,
@@ -205,7 +205,7 @@
 				<!-- Configure a few settings and attach camera  -->
 					function configure() {
 						Webcam.set({
-							 width: 240,
+							 //width: 240,
 							//height: 500,
 							//dest_width: 888,
 							//dest_height: 500,
@@ -220,7 +220,7 @@
 					function configureDesk() {
 						Webcam.set({
 
-							 width: 240,
+							 //width: 240,
 							//height: 500,
 							//dest_width: 888,
 							//dest_height: 500,
@@ -264,7 +264,7 @@
 									document.getElementById("selfiImage").src = data_uri;
 						         
 								//var selfie_image = '<img   src="'+data_uri+'" width="'+width+'" height="'+height+'" >';
-								var selfie_image = '<img   src="'+data_uri+'" width="100%" height="100%" >';
+								var selfie_image = '<img   src="'+data_uri+'"  width="80%" height="80%" >';
 								$('#my_camera').html(selfie_image);
 								
 								/*
