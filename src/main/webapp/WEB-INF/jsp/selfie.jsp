@@ -264,9 +264,10 @@
 									document.getElementById("selfiImage").src = data_uri;
 						         
 								//var selfie_image = '<img   src="'+data_uri+'" width="'+width+'" height="'+height+'" >';
-								var isMobileDevice = /iPhone/i.test(navigator.userAgent);
-									var selfie_image;   
-								if (isMobileDevice == 'true') 
+								//var isMobileDevice = /iPhone/i.test(navigator.userAgent);
+								var isMobileDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;	
+								var selfie_image;   
+								if (isMobileDevice) 
 						           {
 									alert("iphone is working");
 									selfie_image  = '<img   src="'+data_uri+'"  width="100%" height="100%" >';   
