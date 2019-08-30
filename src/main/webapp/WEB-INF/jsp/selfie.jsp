@@ -3,13 +3,14 @@
 <head>
 <title>Max Form</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="bootstrap.css" rel="stylesheet" />
-<link href="nice-select.css" rel="stylesheet" />
-<link href="style_mpro.css" rel="stylesheet" />
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/nice-select.css" rel="stylesheet" />
+<link href="css/style_mpro.css" rel="stylesheet" />
 
 
 </head>
 <style>
+
 .redtext {
 	color: red;
 }
@@ -51,15 +52,13 @@
 }
 
 .custom-check-2:checked+.cstm-check-label::before {
-	background: #004eb4 url("right-tick.png") no-repeat center center;
+	background: #004eb4 url("images/right-tick.png") no-repeat center center;
 	border-color: #004eb4;
 }
-
-.top-content {
+.top-content{
 	padding: 15px;
 }
-
-#my_camera {
+#my_camera{
 	margin: 0 auto;
 }
 /*#my_camera {
@@ -82,22 +81,24 @@
 }
 
 */
-.otp-content .btn-primary {
-	width: 110px;
+.otp-content .btn-primary{
+	width:110px;
 }
-
-#my_camera-ios_div {
+#my_camera-ios_div{
 	width: 100% !important;
 	display: block !important;
 }
-
 @media ( max-width : 767px) {
-	.otp-content {
+	.otp-content{
 		width: 100%;
 		max-width: 100%;
 		padding-top: 0;
 	}
+	
 }
+
+
+
 </style>
 <body>
 
@@ -105,7 +106,7 @@
 	<header>
 		<div class="container-fluid">
 			<div class="logo">
-				<a href="#"><img src="logo.png" alt="MAX_Life" /></a>
+				<a href="#"><img src="images/logo.png" alt="MAX_Life" /></a>
 			</div>
 		</div>
 	</header>
@@ -113,11 +114,11 @@
 		var count = 0;
 	</script>
 
-	<section class="main-content">
+	<section class="main-content" >
 		<div class="otp-content">
-			<div class="top-content">
+			<div class="top-content"  >
 
-				<div id="my_camera" style="width: 240px; height: 240px">
+				<div id="my_camera" style="width:240px;height:240px">
 
 					<script type="text/javascript">
 						function webCamLoad() {
@@ -157,26 +158,29 @@
 					</script>
 
 				</div>
-				<h3 class="textCamera">Position your face inside the frame and
-					click on Take Selfie button</h3>
-				<input type=button id="save_image" class="btn btn-primary"
-					value="Take Selfie" onClick="take_snapshot()">
-				<form class="otp-form" action="mprobuyer" method="post">
-					<div class="form-group"></div>
-					<div class="">
-						<div class="sbtm-btn">
-							<button class="btn btn-primary" id="submitbutton" disabled="true">Submit</button>
-						</div>
+				<h3 class="textCamera">Position your face inside the frame and click on Take Selfie button</h3>
+				<input type=button id="save_image"  class="btn btn-primary" value="Take Selfie"
+					onClick="take_snapshot()"> 
+						<form class="otp-form" action="mprobuyer" method="post">
+				<div class="form-group"></div>
+				<div class="">
+					<div class="sbtm-btn">
+						<button class="btn btn-primary" id="submitbutton" disabled="true">Submit</button> 
+						<!-- <button class="btn btn-primary" id="submitbutton">Submit</button>  -->
 					</div>
+				</div>
 
-					<input type="hidden" name="txnId" value="${TxnId}"> <input
-						type="hidden" id="selfiImage" name="selfiImage" value="">
-					<input type="hidden" id="isSelfieCaptured" name="isSelfieCaptured"
-						value="true">
-
-				</form>
-				<input type="hidden" id="image_fixed" value="false">
-				<!--<input type=button
+				<input type="hidden" name="txnId" value="${TxnId}"> <input
+					type="hidden" id="selfiImage" name="selfiImage" value=""> <input
+					type="hidden" id="isSelfieCaptured" name="isSelfieCaptured"
+					value="true">
+					<input
+					type="hidden" id="linkViewed" name="linkViewed"
+					value="true">
+					
+			</form>
+				<input type="hidden"  id="image_fixed" value="false">	
+					<!--<input type=button
 					class="btn btn-primary" id="take_selfie" value="Take Selfie"
 					onClick="configureWebcam()"> -->
 				<script language="JavaScript">
@@ -231,10 +235,10 @@
                        		
 
 					var image_fixed=$('#image_fixed').val();
-                       			if(image_fixed=='false'){
+                       	if(image_fixed=='false'){
 								Webcam
 								.snap(function(data_uri, event) {
-								document.getElementById("selfiImage").src = data_uri;
+								document.getElementById("selfiImage").value = data_uri;
 						         
 								var isMobileDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;	
 								var selfie_image;   
@@ -266,22 +270,24 @@
 
 			</div>
 
-
-
-
+		
+				
+		
 		</div>
-
+		
 	</section>
 
 	<footer>
 		<div class="container-fluid">
-			<img src="bottom-footer.jpg" alt="Max-life" />
+			<img src="images/bottom-footer.jpg" alt="Max-life" />
 		</div>
 	</footer>
-
-	<script src="jquery-1.11.3.min.js"></script>
-	<script src="bootstrap.js"></script>
-	<script src="jquery.nice-select.min.js"></script>
-	<script src="webcam.min.js"></script>
+<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"/>
+	
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/webcam.min.js"></script>
 </body>
 </html>
