@@ -3,9 +3,9 @@
 <head>
 <title>Max Form</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/bootstrap.css" rel="stylesheet" />
-<link href="css/nice-select.css" rel="stylesheet" />
-<link href="css/style_mpro.css" rel="stylesheet" />
+<link href="bootstrap.css" rel="stylesheet" />
+<link href="nice-select.css" rel="stylesheet" />
+<link href="style_mpro.css" rel="stylesheet" />
 
 
 </head>
@@ -52,7 +52,7 @@
 }
 
 .custom-check-2:checked+.cstm-check-label::before {
-	background: #004eb4 url("images/right-tick.png") no-repeat center center;
+	background: #004eb4 url("right-tick.png") no-repeat center center;
 	border-color: #004eb4;
 }
 .top-content{
@@ -106,7 +106,7 @@
 	<header>
 		<div class="container-fluid">
 			<div class="logo">
-				<a href="#"><img src="images/logo.png" alt="MAX_Life" /></a>
+				<a href="#"><img src="logo.png" alt="MAX_Life" /></a>
 			</div>
 		</div>
 	</header>
@@ -285,9 +285,9 @@
 <script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"/>
 	
-	<script src="js/jquery-1.11.3.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/jquery.nice-select.min.js"></script>
-	<script src="js/webcam.min.js"></script>
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="bootstrap.js"></script>
+	<script src="jquery.nice-select.min.js"></script>
+	<script src="webcam.min.js"></script>
 </body>
 </html>
